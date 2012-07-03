@@ -1,65 +1,36 @@
-spring-eap6-quickstart
-========================
+Spring Framework on OpenShift with JBoss EAP 6
+==============================================
 
 What is it?
 -----------
 
-This is your project! It is a sample, deployable Maven 3 project to help you get your foot in the door developing with Spring on JBoss Enterprise Application Platform 6 or JBoss AS 7.1. 
+This is a sample Maven 3 project to help you get your foot in the door developing with Spring on JBoss Enterprise Application Platform 6 or JBoss AS 7.1, deployable on OpenShift (PaaS by Red Hat).
 
 This project is setup to allow you to create a compliant Spring 3.1 application using Spring MVC, JPA 2.0 and Bean Validation 1.0. It includes a persistence unit and some sample persistence and transaction code to introduce you to database access in enterprise Java. 
 
-The example uses the `java:jboss/datasources/SpringQuickstartDS` database, configured and deployed by the application.
+Quickstart
+----------
 
-System requirements
--------------------
+1) Create an account at http://openshift.redhat.com/ and follow the Getting Started guide to install the OpenShift command line tools.
 
-All you need to build this project is Java 6.0 (Java SDK 1.6) or better, Maven 3.0 or better.
+2) Create a JBoss Enterprise Application Platform 6:
 
-The application this project produces is designed to be run on JBoss Enterprise Application Platform 6 or JBoss AS 7.1. 
+    rhc app create -a spring -t jbosseap-6.0
 
-Start JBoss Enterprise Application Platform 6 or JBoss AS 7.1
--------------------------
+3) Add this upstream repo
 
-1. Open a command line and navigate to the root of the JBoss server directory.
-2. The following shows the command line to start the server with the web profile:
+    cd spring
+    git remote add upstream -m master git://github.com/fabianofranz/spring-eap6-quickstart.git
+    git pull -s recursive -X theirs upstream master
 
-        For Linux:   JBOSS_HOME/bin/standalone.sh
-        For Windows: JBOSS_HOME\bin\standalone.bat
+4) Then push the repo upstream
 
+    git push
 
-Build and Deploy the Application
--------------------------
+5) That's it, you can now browse to your application at:
 
-1. Make sure you have started the JBoss Server as described above.
-2. Open a command line and navigate to the root directory of this quickstart.
-3. Type this command to build and deploy the archive:
-
-        mvn clean package jboss-as:deploy
-
-4. This will deploy `target/spring-eap6-quickstart.war` to the running instance of the server.
+    http://spring-$yournamespace.rhcloud.com
 
 
-Access the application 
----------------------
- 
-The application will be running at the following URL: <http://localhost:8080/spring-eap6-quickstart/>.
-
-
-Undeploy the Archive
---------------------
-
-1. Make sure you have started the JBoss Server as described above.
-2. Open a command line and navigate to the root directory of this quickstart.
-3. When you are finished testing, type this command to undeploy the archive:
-
-        mvn jboss-as:undeploy
-
-
-Debug the Application
-------------------------------------
-
-If you want to debug the source code or look at the Javadocs of any library in the project, run either of the following commands to pull them into your local repository. The IDE should then detect them.
-
-        mvn dependency:sources
-        mvn dependency:resolve -Dclassifier=javadoc
+The example uses the `java:jboss/datasources/SpringQuickstartDS` in-memory database, configured and deployed by the application.
 
