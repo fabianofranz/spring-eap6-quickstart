@@ -23,11 +23,16 @@ Quickstart
     git remote add upstream -m master git://github.com/fabianofranz/spring-eap6-quickstart.git
     git pull -s recursive -X theirs upstream master
 
-4) Then push the repo upstream
+4) Remove the default index.html file and commit
+
+    git rm src/main/webapp/index.html
+    git commit -m 'Removed default index.html'
+
+5) Then push the repo upstream
 
     git push
 
-5) That's it, you can now browse to your application at:
+6) That's it, you can now browse to your application at:
 
     http://spring-$yournamespace.rhcloud.com
 
