@@ -13,11 +13,11 @@ Quickstart
 
 1) Create an account at http://openshift.redhat.com/ and follow the Getting Started guide to install the OpenShift command line tools.
 
-2) Create a JBoss Enterprise Application Platform 6:
+2) Create a JBoss Enterprise Application Platform 6 app:
 
     rhc app create -a spring -t jbosseap-6.0
 
-3) Add this upstream repo
+3) Add this upstream repo:
 
     cd spring
     git remote add upstream -m master git://github.com/fabianofranz/spring-eap6-quickstart.git
