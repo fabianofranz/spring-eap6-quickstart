@@ -8,7 +8,7 @@
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>Getting Started with Spring on JBoss</name>
+    <name>Quickstart for Spring Framework on OpenShift with JBoss EAP 6</name>
 
     <properties>
                 <!-- Spring version -->
@@ -324,6 +324,7 @@
             </plugin>
         </plugins>
     </build>
+    
     <profiles>
         <profile>
             <!-- When built in OpenShift the 'openshift' profile will be 
