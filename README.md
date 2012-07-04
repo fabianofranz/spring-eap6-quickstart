@@ -36,6 +36,9 @@ Quickstart
 
     http://spring-$yournamespace.rhcloud.com
 
+Setting up a database
+---------------------
+
 The example uses a H2 database configured and deployed by the application. You can easily change it to MySQL or PostgreSQL (available on OpenShift as cartridges):
 
 1) Add a database cartridge to your OpenShift app (mysql-5.1 or postgresql-8.4):
