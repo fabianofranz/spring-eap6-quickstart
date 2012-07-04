@@ -23,12 +23,12 @@ Quickstart
     git remote add upstream -m master git://github.com/fabianofranz/spring-eap6-quickstart.git
     git pull -s recursive -X theirs upstream master
 
-4) Remove the default index.html file and commit
+4) Remove the default index.html file and commit:
 
     git rm src/main/webapp/index.html
     git commit -m 'Removed default index.html'
 
-5) Then push the repo upstream
+5) Then push the repo upstream:
 
     git push
 
@@ -36,6 +36,19 @@ Quickstart
 
     http://spring-$yournamespace.rhcloud.com
 
+The example uses a H2 database configured and deployed by the application. You can easily change it to MySQL or PostgreSQL (available on OpenShift as cartridges):
 
-The example uses the `java:jboss/datasources/SpringQuickstartDS` in-memory database, configured and deployed by the application.
+1) Add a database cartridge to your OpenShift app (mysql-5.1 or postgresql-8.4):
+
+    rhc app cartridge add -a spring -c mysql-5.1
+
+2) Change `persistence.xml` to use the appropriate datasource (java:jboss/datasources/MysqlDS or java:jboss/datasources/PostgreSQLDS):
+
+    <jta-data-source>java:jboss/datasources/MysqlDS</jta-data-source>
+
+3) Commit and push your changes:
+
+    git commit -a -m 'Added MySQL database support'
+    git push
+
 
