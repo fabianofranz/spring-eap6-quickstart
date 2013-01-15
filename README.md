@@ -54,4 +54,7 @@ The example uses a H2 database configured and deployed by the application. You c
     git commit -a -m 'Added MySQL database support'
     git push
 
+License
+-------
 
+This code is dedicated to the public domain to the maximum extent permitted by applicable law, pursuant to CC0 (http://creativecommons.org/publicdomain/zero/1.0/)
