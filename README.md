@@ -43,7 +43,7 @@ The example uses a H2 database configured and deployed by the application. You c
 
 1) Add a database cartridge to your OpenShift app (mysql-5.1 or postgresql-8.4):
 
-    rhc app cartridge add -a spring -c mysql-5.1
+    rhc cartridge add -a spring -c mysql-5.1
 
 2) Edit `src/main/resources/META-INF/persistence.xml` to use the appropriate datasource (java:jboss/datasources/MysqlDS or java:jboss/datasources/PostgreSQLDS):
 
