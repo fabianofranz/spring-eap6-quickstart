@@ -31,7 +31,7 @@ body {
   font-size: 0.9em;
   width: 275px;
   float: left;
-  margin: 20px 0px;
+  margin: 30px 0px 20px;
   border: 1px solid #D5D5D5;
   background: #F1F1F1;
   background-image: url(../gfx/asidebkg.png);
@@ -45,6 +45,22 @@ body {
 .dualbrand {
   float: right;
   padding-right: 10px;
+}
+.branding {
+  padding-left: 10px;
+}
+.branding img {
+  vertical-align: middle;
+}
+.branding img .openshift {
+  width: 350px;
+}
+.branding img .spring {
+  width: 70px;
+  margin-left: 70px;
+}
+.branding img .jboss {
+  margin-left: 75px;
 }
 #footer {
   clear: both;
@@ -184,5 +200,5 @@ input {
 
 .simpletablestyle td a:hover {
   color:#3883ce;
-  text-decoration:none; 
+  text-decoration:none;
 }

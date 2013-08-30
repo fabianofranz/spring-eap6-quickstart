@@ -4,21 +4,21 @@
 <html>
 
 	<head>
-		<title>Spring MVC Starter Application</title>
+		<title>Welcome to Spring on JBoss on OpenShift!</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="<c:url value="/static/resources/css/screen.css"/>"/>
 	</head>
 
 	<body>
 		<div id="container">
-			<div class="dualbrand">
-				<img src="<c:url value="/static/resources/gfx/dualbrand_logo.png"/>"/>
-			</div>
+			<div class="branding">
+    			<img src="<c:url value="/static/resources/gfx/logos-openshift-shadowman-invoice.png"/>" class="openshift" />
+    			<img src="<c:url value="/static/resources/gfx/logo-spring-103x60.png"/>" class="spring" />
+  				<img src="<c:url value="/static/resources/gfx/dualbrand_logo.png"/>" class="jboss" />
+  			</div>
 			<div id="content">
-				<h1>Welcome to JBoss!</h1>
-
+				<h1>Welcome to Spring on JBoss on OpenShift!</h1>
 				<div>
-					<p>You have successfully deployed a Spring MVC web application.</p>
 					<h3>Your application can run on:</h3>
 					<img src="<c:url value="/static/resources/gfx/dualbrand_as7eap.png"/>"/>
 				</div>
@@ -43,7 +43,7 @@
 								<td><form:input path="phoneNumber"/></td>
 								<td><form:errors class="invalid" path="phoneNumber"/></td>
 							</tr>
-	
+
 						</tbody>
 					</table>
 					<table>
@@ -92,13 +92,18 @@
 				</c:choose>
 			</div>
 			<div id="aside">
-				<p>Learn more about JBoss Enterprise Application Platform 6.</p>
+				<p>Learn more about <a href="https://www.openshift.com/">OpenShift</a>:</p>
 				<ul>
-					<li><a
-						href="http://red.ht/jbeap-6-docs">Documentation</a></li>
+					<li><a href="https://www.openshift.com/products/online">OpenShift Online</a></li>
+					<li><a href="https://www.openshift.com/products/origin">OpenShift Origin</a></li>
+					<li><a href="https://www.openshift.com/products/enterprise">OpenShift Enterprise</a></li>
+				</ul>
+				<p>Learn more about JBoss Enterprise Application Platform 6:</p>
+				<ul>
+					<li><a href="http://red.ht/jbeap-6-docs">Documentation</a></li>
 					<li><a href="http://red.ht/jbeap-6">Product Information</a></li>
 				</ul>
-				<p>Learn more about JBoss AS 7.</p>
+				<p>Learn more about JBoss AS 7:</p>
 				<ul>
 					<li><a
 						href="https://docs.jboss.org/author/display/AS7/Getting+Started+Developing+Applications+Guide">Getting Started Developing Applications Guide</a></li>
