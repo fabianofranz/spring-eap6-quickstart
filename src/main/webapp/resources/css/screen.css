@@ -52,14 +52,14 @@ body {
 .branding img {
   vertical-align: middle;
 }
-.branding img .openshift {
+.branding img.openshift {
   width: 350px;
 }
-.branding img .spring {
+.branding img.spring {
   width: 70px;
   margin-left: 70px;
 }
-.branding img .jboss {
+.branding img.jboss {
   margin-left: 75px;
 }
 #footer {
