@@ -15,7 +15,7 @@ Quickstart
 
 2) Create a JBoss Enterprise Application Platform 6 app:
 
-    rhc app create -a spring -t jbosseap-6
+    rhc app create spring jbosseap-6
 
 3) Add this upstream repo:
 
