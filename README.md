@@ -11,7 +11,7 @@ This project is setup to allow you to create a compliant Spring 3.1 application 
 Quickstart
 ----------
 
-1) Create an account at http://openshift.redhat.com/ and follow the Getting Started guide to install the OpenShift command line tools.
+1) Create an account at https://www.openshift.com and follow the Getting Started guide to install the OpenShift command line tools.
 
 2) Create a JBoss Enterprise Application Platform 6 app:
 
