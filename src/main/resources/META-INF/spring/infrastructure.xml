@@ -19,6 +19,9 @@
    		<property name="entityManagerFactory" ref="entityManagerFactory"/>
 	</bean>
                      
+    <jee:jndi-lookup id="exampleDSBean" jndi-name="java:comp/env/jdbc/ExampleDS" lazy-init="false"/>
+    <jee:jndi-lookup id="exampleDSBean2" jndi-name="jdbc/ExampleDS" lazy-init="false"/>                 
+                     
     <tx:jta-transaction-manager />
 
 	
