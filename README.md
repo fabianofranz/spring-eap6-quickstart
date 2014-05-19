@@ -45,9 +45,9 @@ The example uses a H2 database configured and deployed by the application. You c
 
     rhc cartridge add -a spring -c mysql-5.1
 
-2) Edit `src/main/resources/META-INF/persistence.xml` to use the appropriate datasource (java:jboss/datasources/MysqlDS or java:jboss/datasources/PostgreSQLDS):
+2) Edit `src/main/webapp/WEB-INF/jboss-web.xml` to use the appropriate datasource (java:jboss/datasources/MysqlDS or java:jboss/datasources/PostgreSQLDS):
 
-    <jta-data-source>java:jboss/datasources/MysqlDS</jta-data-source>
+    <jndi-name>java:jboss/datasources/MysqlDS</jndi-name>
 
 3) Commit and push your changes:
 
