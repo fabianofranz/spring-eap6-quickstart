@@ -12,7 +12,7 @@
 
     <properties>
                 <!-- Spring version -->
-        <version.spring>3.1.1.RELEASE</version.spring>
+        <version.spring>3.2.8.RELEASE</version.spring>
 
         <!-- Spring Third Party dependencies -->
         <version.aopalliance>1.0</version.aopalliance>
@@ -185,10 +185,10 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
         </dependency>
-        <dependency>
+        <!-- dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-asm</artifactId>
-        </dependency>
+        </dependency-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
